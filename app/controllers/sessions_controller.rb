@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   def create
     session[:name] = params[:name]
     if params[:name].nil?
-      redirect_to sessions_new_path
+      redirect_to '/sessions/new'
     else
       redirect_to '/'
     end
