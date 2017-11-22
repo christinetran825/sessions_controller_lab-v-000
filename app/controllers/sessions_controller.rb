@@ -7,7 +7,6 @@ class SessionsController < ApplicationController
     if params[:name].nil?
       redirect_to '/sessions/new'
     else
-
       redirect_to '/'
     end
   end
