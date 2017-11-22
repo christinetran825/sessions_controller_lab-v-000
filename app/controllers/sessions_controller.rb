@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
     if session[:name].nil?
       session[:name] == nil
     else
-      session.delete :username
+      session.delete :name
     end
   end
 end
